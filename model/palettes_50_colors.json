@@ -1,0 +1,606 @@
+{
+  "white": [
+    {
+      "hex": "#FFFFFF",
+      "name": "White"
+    },
+    {
+      "hex": "#0B3D91",
+      "name": "Navy / Deep Blue"
+    },
+    {
+      "hex": "#0F7A5A",
+      "name": "Emerald / Teal"
+    },
+    {
+      "hex": "#800020",
+      "name": "Burgundy"
+    },
+    {
+      "hex": "#FFD700",
+      "name": "Warm Gold"
+    },
+    {
+      "hex": "#F2C6B4",
+      "name": "Warm Blush"
+    },
+    {
+      "hex": "#FFB6C1",
+      "name": "Light Pink"
+    },
+    {
+      "hex": "#FFC0CB",
+      "name": "Pink"
+    },
+    {
+      "hex": "#FFDAB9",
+      "name": "PeachPuff"
+    },
+    {
+      "hex": "#FF7F50",
+      "name": "Coral"
+    },
+    {
+      "hex": "#FA8072",
+      "name": "Salmon"
+    },
+    {
+      "hex": "#E6E6FA",
+      "name": "Lavender"
+    },
+    {
+      "hex": "#D8BFD8",
+      "name": "Thistle / Lilac"
+    },
+    {
+      "hex": "#B0E0E6",
+      "name": "Powder Blue"
+    },
+    {
+      "hex": "#87CEEB",
+      "name": "Sky Blue"
+    },
+    {
+      "hex": "#ADD8E6",
+      "name": "Light Blue"
+    },
+    {
+      "hex": "#00CED1",
+      "name": "Dark Turquoise"
+    },
+    {
+      "hex": "#20B2AA",
+      "name": "Light Sea Green"
+    },
+    {
+      "hex": "#2E8B57",
+      "name": "Sea Green"
+    },
+    {
+      "hex": "#006400",
+      "name": "Dark Green"
+    },
+    {
+      "hex": "#228B22",
+      "name": "Forest Green"
+    },
+    {
+      "hex": "#556B2F",
+      "name": "Dark Olive Green"
+    },
+    {
+      "hex": "#8B4513",
+      "name": "Saddle Brown"
+    },
+    {
+      "hex": "#A0522D",
+      "name": "Sienna"
+    },
+    {
+      "hex": "#CD853F",
+      "name": "Peru"
+    },
+    {
+      "hex": "#DEB887",
+      "name": "Burlywood"
+    },
+    {
+      "hex": "#F4A460",
+      "name": "Sandy Brown"
+    },
+    {
+      "hex": "#B8860B",
+      "name": "Dark Goldenrod / Mustard"
+    },
+    {
+      "hex": "#FFF5E1",
+      "name": "Cream"
+    },
+    {
+      "hex": "#F5F5DC",
+      "name": "Beige"
+    },
+    {
+      "hex": "#FFEFD5",
+      "name": "Papaya Whip"
+    },
+    {
+      "hex": "#FFFACD",
+      "name": "Lemon Chiffon"
+    },
+    {
+      "hex": "#FFE4B5",
+      "name": "Moccasin"
+    },
+    {
+      "hex": "#F0E68C",
+      "name": "Khaki"
+    },
+    {
+      "hex": "#C0C0C0",
+      "name": "Silver"
+    },
+    {
+      "hex": "#808080",
+      "name": "Gray"
+    },
+    {
+      "hex": "#333333",
+      "name": "Charcoal"
+    },
+    {
+      "hex": "#2F4F4F",
+      "name": "Dark Slate Gray"
+    },
+    {
+      "hex": "#483C32",
+      "name": "Taupe"
+    },
+    {
+      "hex": "#4B0082",
+      "name": "Indigo"
+    },
+    {
+      "hex": "#3F51B5",
+      "name": "Indigo Blue"
+    },
+    {
+      "hex": "#6A0DAD",
+      "name": "Royal Purple"
+    },
+    {
+      "hex": "#8A2BE2",
+      "name": "Blue Violet"
+    },
+    {
+      "hex": "#BA55D3",
+      "name": "Medium Orchid"
+    },
+    {
+      "hex": "#FF4500",
+      "name": "Orange Red"
+    },
+    {
+      "hex": "#FF6347",
+      "name": "Tomato"
+    },
+    {
+      "hex": "#FF1493",
+      "name": "Deep Pink"
+    },
+    {
+      "hex": "#8B0000",
+      "name": "Dark Red"
+    },
+    {
+      "hex": "#7FFF00",
+      "name": "Chartreuse"
+    },
+    {
+      "hex": "#ADFF2F",
+      "name": "Green Yellow"
+    }
+  ],
+
+
+
+  
+  "brown": [
+    {
+      "hex": "#8B4513",
+      "name": "Rust / Saddle Brown"
+    },
+    {
+      "hex": "#A0522D",
+      "name": "Sienna"
+    },
+    {
+      "hex": "#C04E4E",
+      "name": "Terracotta / Coral"
+    },
+    {
+      "hex": "#B8860B",
+      "name": "Mustard / Amber"
+    },
+    {
+      "hex": "#2E8B57",
+      "name": "Olive / Green"
+    },
+    {
+      "hex": "#006D77",
+      "name": "Teal / Petrol"
+    },
+    {
+      "hex": "#556B2F",
+      "name": "Dark Olive Green"
+    },
+    {
+      "hex": "#808000",
+      "name": "Olive"
+    },
+    {
+      "hex": "#CD853F",
+      "name": "Peru"
+    },
+    {
+      "hex": "#DEB887",
+      "name": "Burlywood"
+    },
+    {
+      "hex": "#D2691E",
+      "name": "Chocolate"
+    },
+    {
+      "hex": "#704214",
+      "name": "Deep Earth Brown"
+    },
+    {
+      "hex": "#8B0000",
+      "name": "Deep Maroon"
+    },
+    {
+      "hex": "#800000",
+      "name": "Maroon"
+    },
+    {
+      "hex": "#800020",
+      "name": "Burgundy"
+    },
+    {
+      "hex": "#6B4226",
+      "name": "Coffee Brown"
+    },
+    {
+      "hex": "#F4A460",
+      "name": "Sandy Brown"
+    },
+    {
+      "hex": "#E07A5F",
+      "name": "Desert Clay"
+    },
+    {
+      "hex": "#C9AE5D",
+      "name": "Antique Gold"
+    },
+    {
+      "hex": "#FFD700",
+      "name": "Gold (accent)"
+    },
+    {
+      "hex": "#FF8C00",
+      "name": "Dark Orange"
+    },
+    {
+      "hex": "#FF7F50",
+      "name": "Coral"
+    },
+    {
+      "hex": "#FF6F61",
+      "name": "Coral Pink"
+    },
+    {
+      "hex": "#E97451",
+      "name": "Clay Red"
+    },
+    {
+      "hex": "#C97C5D",
+      "name": "Terracotta Light"
+    },
+    {
+      "hex": "#2F4F4F",
+      "name": "Slate (neutral)"
+    },
+    {
+      "hex": "#3A5F0B",
+      "name": "Moss Green"
+    },
+    {
+      "hex": "#228B22",
+      "name": "Forest Green"
+    },
+    {
+      "hex": "#0F7A5A",
+      "name": "Emerald Teal"
+    },
+    {
+      "hex": "#00635A",
+      "name": "Deep Teal"
+    },
+    {
+      "hex": "#2B6F77",
+      "name": "Petrol Blue"
+    },
+    {
+      "hex": "#0B3D91",
+      "name": "Navy Accent"
+    },
+    {
+      "hex": "#4B0082",
+      "name": "Indigo Accent"
+    },
+    {
+      "hex": "#6A0DAD",
+      "name": "Royal Purple"
+    },
+    {
+      "hex": "#8B5E3C",
+      "name": "Warm Chestnut"
+    },
+    {
+      "hex": "#B5651D",
+      "name": "Caramel / Copper"
+    },
+    {
+      "hex": "#D4AF37",
+      "name": "Brassy Gold"
+    },
+    {
+      "hex": "#FFDAB9",
+      "name": "Soft Peach"
+    },
+    {
+      "hex": "#FFE4C4",
+      "name": "Bisque"
+    },
+    {
+      "hex": "#FFF5E1",
+      "name": "Light Cream"
+    },
+    {
+      "hex": "#F5DEB3",
+      "name": "Wheat"
+    },
+    {
+      "hex": "#BDB76B",
+      "name": "Dark Khaki"
+    },
+    {
+      "hex": "#556B2F",
+      "name": "Deep Olive"
+    },
+    {
+      "hex": "#2E8B57",
+      "name": "Balanced Olive"
+    },
+    {
+      "hex": "#FFB347",
+      "name": "Apricot / Amber"
+    },
+    {
+      "hex": "#FF9A8D",
+      "name": "Warm Rose"
+    },
+    {
+      "hex": "#6B8E23",
+      "name": "Olive Drab"
+    },
+    {
+      "hex": "#5C4033",
+      "name": "Dark Cocoa"
+    }
+  ],
+
+  
+  "black": [
+    {
+      "hex": "#FFFFFF",
+      "name": "Crisp White"
+    },
+    {
+      "hex": "#00A3E0",
+      "name": "Cobalt / Sky Blue"
+    },
+    {
+      "hex": "#FF6EC7",
+      "name": "Pastel Pink / Bubblegum"
+    },
+    {
+      "hex": "#FFD166",
+      "name": "Peach / Light Amber"
+    },
+    {
+      "hex": "#6A0DAD",
+      "name": "Royal Purple"
+    },
+    {
+      "hex": "#FF4D6D",
+      "name": "Hot Pink"
+    },
+    {
+      "hex": "#00F5D4",
+      "name": "Neon Teal / Mint Accent"
+    },
+    {
+      "hex": "#FFB703",
+      "name": "Bright Amber / Mustard Accent"
+    },
+    {
+      "hex": "#FF4500",
+      "name": "Orange Red"
+    },
+    {
+      "hex": "#FF6347",
+      "name": "Tomato"
+    },
+    {
+      "hex": "#00CED1",
+      "name": "Dark Turquoise"
+    },
+    {
+      "hex": "#1E90FF",
+      "name": "Dodger Blue"
+    },
+    {
+      "hex": "#4169E1",
+      "name": "Royal Blue"
+    },
+    {
+      "hex": "#00008B",
+      "name": "Dark Blue / Navy"
+    },
+    {
+      "hex": "#000000",
+      "name": "True Black"
+    },
+    {
+      "hex": "#2F4F4F",
+      "name": "Slate (neutral)"
+    },
+    {
+      "hex": "#B22222",
+      "name": "Firebrick"
+    },
+    {
+      "hex": "#8B0000",
+      "name": "Dark Red"
+    },
+    {
+      "hex": "#800000",
+      "name": "Maroon"
+    },
+    {
+      "hex": "#006400",
+      "name": "Dark Green"
+    },
+    {
+      "hex": "#2E8B57",
+      "name": "Sea Green"
+    },
+    {
+      "hex": "#32CD32",
+      "name": "LimeGreen"
+    },
+    {
+      "hex": "#7CFC00",
+      "name": "LawnGreen"
+    },
+    {
+      "hex": "#FFD700",
+      "name": "Gold (metallic)"
+    },
+    {
+      "hex": "#F4A460",
+      "name": "Saddle / Sandy"
+    },
+    {
+      "hex": "#FF1493",
+      "name": "Deep Pink"
+    },
+    {
+      "hex": "#C71585",
+      "name": "Medium Violet Red"
+    },
+    {
+      "hex": "#8A2BE2",
+      "name": "BlueViolet"
+    },
+    {
+      "hex": "#4B0082",
+      "name": "Indigo"
+    },
+    {
+      "hex": "#800080",
+      "name": "Purple"
+    },
+    {
+      "hex": "#FF8C00",
+      "name": "Dark Orange"
+    },
+    {
+      "hex": "#FFC107",
+      "name": "Amber / Honey"
+    },
+    {
+      "hex": "#FFEB3B",
+      "name": "Bright Yellow"
+    },
+    {
+      "hex": "#00FF7F",
+      "name": "Spring Green"
+    },
+    {
+      "hex": "#40E0D0",
+      "name": "Turquoise"
+    },
+    {
+      "hex": "#20B2AA",
+      "name": "Light Sea Green"
+    },
+    {
+      "hex": "#FFDAB9",
+      "name": "Soft Peach"
+    },
+    {
+      "hex": "#EEE8AA",
+      "name": "Pale Goldenrod"
+    },
+    {
+      "hex": "#E9967A",
+      "name": "Dark Salmon"
+    },
+    {
+      "hex": "#CD5C5C",
+      "name": "Indian Red"
+    },
+    {
+      "hex": "#6A5ACD",
+      "name": "Slate Blue"
+    },
+    {
+      "hex": "#483D8B",
+      "name": "Dark Slate Blue"
+    },
+    {
+      "hex": "#2B2B2B",
+      "name": "Graphite"
+    },
+    {
+      "hex": "#F0E68C",
+      "name": "Khaki"
+    },
+    {
+      "hex": "#FDF5E6",
+      "name": "Old Lace"
+    },
+    {
+      "hex": "#FFE4E1",
+      "name": "Misty Rose"
+    },
+    {
+      "hex": "#FFDEAD",
+      "name": "Navajo White"
+    },
+    {
+      "hex": "#DA70D6",
+      "name": "Orchid"
+    },
+    {
+      "hex": "#B03060",
+      "name": "Maroon Pink"
+    },
+    {
+      "hex": "#FF69B4",
+      "name": "Hot Pink (Bright)"
+    }
+  ]
+}

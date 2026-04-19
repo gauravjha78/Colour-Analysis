@@ -1,0 +1,19 @@
+
+
+# FastAPI (for future migration)
+fastapi
+uvicorn[standard]
+pydantic
+
+# ML / AI
+tensorflow
+numpy
+
+# Image Processing
+opencv-python-headless
+pillow
+
+
+
+# Utilities
+python-multipart
