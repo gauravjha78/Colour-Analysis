@@ -4,11 +4,17 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 import cv2
-import tensorflow as tf
+# import tensorflow as tf
 import json, random, os
+
+from starlette.responses import JSONResponse
+import requests
+import base64
+import time
 
 
 app = FastAPI()
+
 
 # CORS
 app.add_middleware(
@@ -25,9 +31,14 @@ MODEL_PATH = os.path.join(BASE_DIR, "model", "skin_tone_savedmodel_op.keras")
 PALETTE_PATH = os.path.join(BASE_DIR, "model", "palettes_50_colors.json")
 IMG_SIZE = (224, 224)
 
+FASHN_API_KEY = os.getenv("FASHN_API_KEY")
+FASHN_RUN_URL = "https://api.fashn.ai/v1/run"
+FASHN_STATUS_URL = "https://api.fashn.ai/v1/status"
+POLL_INTERVAL_SECONDS = 3
+
 # Load model
 print("Loading model...")
-model = tf.keras.models.load_model(MODEL_PATH, compile=False)
+# model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 print("Model loaded")
 
 # Load palettes
@@ -175,3 +186,65 @@ async def predict(file: UploadFile = File(...)):
         "all_probs": all_probs,
         "colors": colors
     }
+
+
+# tryon part
+
+def encode_image_data_uri(file_bytes: bytes, content_type: str) -> str:
+    base64_encoded = base64.b64encode(file_bytes).decode("utf-8")
+    return f"data:{content_type};base64,{base64_encoded}"
+
+
+@app.post("/tryon")
+async def try_on(person_image: UploadFile = File(...), cloth_image: UploadFile = File(...)):
+    try:
+        person_bytes = await person_image.read()
+        cloth_bytes = await cloth_image.read()
+
+        person_data_uri = encode_image_data_uri(person_bytes, person_image.content_type)
+        cloth_data_uri = encode_image_data_uri(cloth_bytes, cloth_image.content_type)
+
+        payload = {
+            "model_name": "tryon-v1.6",
+            "inputs": {
+                "model_image": person_data_uri,
+                "garment_image": cloth_data_uri,
+                "category": "tops",
+                "mode": "quality"
+            }
+        }
+
+        headers = {
+            "Authorization": f"Bearer {FASHN_API_KEY}",
+            "Content-Type": "application/json"
+        }
+
+        submit_res = requests.post(FASHN_RUN_URL, json=payload, headers=headers)
+        submit_data = submit_res.json()
+
+        print("FASHN RESPONSE:", submit_data)
+
+        prediction_id = submit_data.get("id")
+        if not prediction_id:
+            return JSONResponse(status_code=500, content={"error": "No prediction ID"})
+
+        # polling
+        for _ in range(30):
+            time.sleep(POLL_INTERVAL_SECONDS)
+
+            status_res = requests.get(f"{FASHN_STATUS_URL}/{prediction_id}", headers=headers)
+            status_data = status_res.json()
+
+            if status_data.get("status") == "completed":
+                output = status_data.get("output")
+
+                if isinstance(output, list) and len(output) > 0:
+                    return {"output_url": output[0]}
+
+                if isinstance(output, dict):
+                    return {"output_url": output.get("image_url")}
+
+        return JSONResponse(status_code=504, content={"error": "Timeout"})
+
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
