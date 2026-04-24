@@ -28,10 +28,7 @@ MODEL_PATH = os.path.join(BASE_DIR, "model", "skin_tone_savedmodel_op.keras")
 PALETTE_PATH = os.path.join(BASE_DIR, "model", "palettes_50_colors.json")
 IMG_SIZE = (224, 224)
 
-FASHN_API_KEY = os.getenv("FASHN_API_KEY")
-FASHN_RUN_URL = "https://api.fashn.ai/v1/run"
-FASHN_STATUS_URL = "https://api.fashn.ai/v1/status"
-POLL_INTERVAL_SECONDS = 3
+
 
 # Load model
 print("Loading model...")
