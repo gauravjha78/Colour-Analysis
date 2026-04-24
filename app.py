@@ -4,7 +4,7 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 import cv2
-# import tensorflow as tf
+import tensorflow as tf
 import json, random, os
 
 
@@ -32,7 +32,7 @@ IMG_SIZE = (224, 224)
 
 # Load model
 print("Loading model...")
-# model = tf.keras.models.load_model(MODEL_PATH, compile=False)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 print("Model loaded")
 
 # Load palettes
